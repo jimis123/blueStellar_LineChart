@@ -1,0 +1,148 @@
+.App {
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica;
+    -webkit-font-smoothing: antialiased;
+    background: rgb(254, 254, 254);
+}
+
+h2 {
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: black;
+    padding: 10px 0;
+}
+
+
+/* Table Styles */
+
+.table-wrapper {
+    margin: 10px 70px 70px;
+    box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2);
+    overflow-x: auto;
+    /* Horizontal scroll for small screens */
+}
+
+.fl-table {
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: normal;
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 100%;
+    white-space: nowrap;
+    background-color: white;
+}
+
+.fl-table td,
+.fl-table th {
+    text-align: center;
+    padding: 8px;
+}
+
+.fl-table td {
+    border-right: 1px solid #f8f8f8;
+    font-size: 12px;
+}
+
+.fl-table thead th {
+    color: #ffffff;
+    font-size: 16px;
+    background: #4FC3A1;
+}
+
+.fl-table thead th:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.fl-table tr:nth-child(even) {
+    background: #F8F8F8;
+}
+
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+    .table-wrapper {
+        margin: 10px 20px 70px;
+    }
+    .fl-table td,
+    .fl-table th {
+        padding: 6px;
+    }
+    .fl-table thead th {
+        font-size: 14px;
+    }
+    .fl-table td {
+        font-size: 12px;
+    }
+}
+
+.search-container {
+    display: inline;
+    align-items: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.search-space {
+    margin-left: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.calender {
+    padding: 8px;
+    border: 2px solid gray;
+    cursor: pointer;
+}
+
+.dateRange {
+    position: absolute;
+    top: 120px;
+    bottom: 120px;
+}
+
+.chart-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    top: 120px;
+}
+
+.header-container {
+    text-decoration-line: underline;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .chart-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    table {
+        width: 100%;
+    }
+}
