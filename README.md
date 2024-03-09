@@ -2,9 +2,23 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+I built this senario in react.js and Vizual Studio Code
 ## Available Scripts
 
 In the project directory, you can run:
+To make the app work properly you must run in terminal :
+### `npm install`
+### `npm create-react-project "select any name of your choice"`
+### `cd to the name of project`
+
+### `Also create a folder named Components in the src folder and place 
+      DateRangePicker.jsx
+      LineChart.jsx
+      timeseries.json
+      TimeseriesComponent.jsx
+      TimeSeriesTable.jsx`
+
+### `npm start dev`
 
 ### `npm start`
 
